@@ -54,8 +54,6 @@ Rails.application.configure do
   config.log_level = :debug
 
   
-  config.logger = Logger.new(STDOUT)
-  config.logger.level = Logger::DEBUG
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
@@ -86,7 +84,7 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-  HEROKU_DEBUG_RAILS_RUNNER=1
+  
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)

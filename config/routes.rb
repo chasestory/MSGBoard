@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     resources :comments
   end
   
-  root 'messages#index'
+  root to: 'messages#index'
 end
