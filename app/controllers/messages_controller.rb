@@ -33,7 +33,7 @@ class MessagesController < ApplicationController
       render 'edit'
     end
   end
-
+    # Problem with deleting message if comments are posted!!!!!!!!!!!!!!!!!!!!
   def destroy
     @message.destroy
     redirect_to root_path
