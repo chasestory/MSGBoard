@@ -6,5 +6,5 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: <%= ENV.fetch("REDIS_URL") { "redis://h:p32a0ca23e4c1192e81987bc1c5e664879aaec314c6b41f8d0f5825edbd14b627@ec2-35-169-183-113.compute-1.amazonaws.com:28399" } %>
   channel_prefix: MessageBoard_production
